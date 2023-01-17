@@ -4,12 +4,18 @@ protocol APIClientProtocol {
 
 final class APIClient: APIClientProtocol {
     func fetchData() -> String {
-        return "live data"
+        return "default"
     }
 }
 
 final class StubAPIClient: APIClientProtocol {
+    let data: String
+
+    init(data: String) {
+        self.data = data
+    }
+
     func fetchData() -> String {
-        return "stub data"
+        return data
     }
 }

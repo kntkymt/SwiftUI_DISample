@@ -1,12 +1,14 @@
-protocol UserRepositoryProtocol {
+import Foundation
+import Dependencies
+
+protocol UserRepositoryProtocol: ObservableObject {
     func fetchData() -> String
 }
 
 final class UserRepository: UserRepositoryProtocol {
-    private var apiClient: APIClientProtocol
+    @Dependency(\.apiClient) var apiClient
 
-    init(apiClient: APIClientProtocol) {
-        self.apiClient = apiClient
+    init() {
     }
 
     func fetchData() -> String {

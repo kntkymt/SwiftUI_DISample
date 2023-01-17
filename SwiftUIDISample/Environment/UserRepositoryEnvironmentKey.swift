@@ -1,11 +1,7 @@
 import SwiftUI
 
 enum UserRepositoryEnvironmentKey: EnvironmentKey {
-    #if DEBUG
-    static var defaultValue: any UserRepositoryProtocol = StubUserRepository(data: "environment")
-    #else
-    static var defaultValue: any UserRepositoryProtocol = UserRepository(apiClient: APIClientKey.liveValue)
-    #endif
+    static var defaultValue: any UserRepositoryProtocol = UserRepository()
 }
 
 extension EnvironmentValues {
