@@ -15,6 +15,8 @@
 		E250A9452977129B00385509 /* APIClientKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E250A9442977129B00385509 /* APIClientKey.swift */; };
 		E250A94929771B4B00385509 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E250A94829771B4B00385509 /* UserRepository.swift */; };
 		E250A94B29771BDE00385509 /* UserRepositoryKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E250A94A29771BDE00385509 /* UserRepositoryKey.swift */; };
+		E250A95029771FF700385509 /* APIClientEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E250A94F29771FF700385509 /* APIClientEnvironmentKey.swift */; };
+		E250A952297726A700385509 /* UserRepositoryEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E250A951297726A700385509 /* UserRepositoryEnvironmentKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E250A9442977129B00385509 /* APIClientKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientKey.swift; sourceTree = "<group>"; };
 		E250A94829771B4B00385509 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		E250A94A29771BDE00385509 /* UserRepositoryKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryKey.swift; sourceTree = "<group>"; };
+		E250A94F29771FF700385509 /* APIClientEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientEnvironmentKey.swift; sourceTree = "<group>"; };
+		E250A951297726A700385509 /* UserRepositoryEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryEnvironmentKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 		E250A92F2976B5B400385509 /* SwiftUIDISample */ = {
 			isa = PBXGroup;
 			children = (
+				E250A94E29771FCD00385509 /* Dependency */,
+				E250A94D29771FB500385509 /* Environment */,
 				E250A941297711B100385509 /* Dependencies */,
 				E250A9302976B5B400385509 /* SwiftUIDISampleApp.swift */,
 				E250A9322976B5B400385509 /* ContentView.swift */,
@@ -70,20 +76,28 @@
 		E250A941297711B100385509 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				E250A942297711C100385509 /* APIClient.swift */,
-				E250A94829771B4B00385509 /* UserRepository.swift */,
-				E250A94C29771CE600385509 /* Keys */,
+				E250A9442977129B00385509 /* APIClientKey.swift */,
+				E250A94A29771BDE00385509 /* UserRepositoryKey.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
-		E250A94C29771CE600385509 /* Keys */ = {
+		E250A94D29771FB500385509 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
-				E250A9442977129B00385509 /* APIClientKey.swift */,
-				E250A94A29771BDE00385509 /* UserRepositoryKey.swift */,
+				E250A94F29771FF700385509 /* APIClientEnvironmentKey.swift */,
+				E250A951297726A700385509 /* UserRepositoryEnvironmentKey.swift */,
 			);
-			path = Keys;
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		E250A94E29771FCD00385509 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				E250A942297711C100385509 /* APIClient.swift */,
+				E250A94829771B4B00385509 /* UserRepository.swift */,
+			);
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E250A95029771FF700385509 /* APIClientEnvironmentKey.swift in Sources */,
 				E250A94B29771BDE00385509 /* UserRepositoryKey.swift in Sources */,
+				E250A952297726A700385509 /* UserRepositoryEnvironmentKey.swift in Sources */,
 				E250A9452977129B00385509 /* APIClientKey.swift in Sources */,
 				E250A9332976B5B400385509 /* ContentView.swift in Sources */,
 				E250A94929771B4B00385509 /* UserRepository.swift in Sources */,

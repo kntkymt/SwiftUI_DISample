@@ -15,7 +15,13 @@ final class UserRepository: UserRepositoryProtocol {
 }
 
 final class StubUserRepository: UserRepositoryProtocol {
+
+    let data: String
+
+    init(data: String) {
+        self.data = data
+    }
     func fetchData() -> String {
-        return "stub data"
+        return data
     }
 }
